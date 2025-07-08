@@ -8,7 +8,7 @@ GRAY = (180, 180, 180)
 
 # Inicialização pygame
 pygame.init()
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 1280, 720
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("A Espada do Último Guardião")
 font = pygame.font.SysFont("serif", 24)
