@@ -273,7 +273,7 @@ class VillageScene(Scene):
                 if event.key == pygame.K_1:
                     game.change_scene("combat")
                 elif event.key == pygame.K_2:
-                    game.change_scene("final")
+                    game.change_scene("king")
 
 class CombatScene(Scene):
     def __init__(self, font, player, background=None):
