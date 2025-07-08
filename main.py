@@ -41,7 +41,7 @@ def draw_hud_box(screen, rect, font, text):
     draw_text(screen, text, (rect.x + 20, rect.y + 20), font)
 
 
-# Classe base
+# classe "base" a se seguir para todas as cenas
 class Scene:
     def render(self, screen): raise NotImplementedError
     def handle_event(self, event, game): raise NotImplementedError
@@ -59,7 +59,7 @@ class Player:
     def change_alignment(self, new_alignment):
         self.alignment = new_alignment
 
-# Espada
+# Espada (não foi implementado)
 class Sword:
     def __init__(self):
         self.name = "Espada do Último Guardião"
@@ -691,7 +691,7 @@ class Game:
         self.current_scene = scenes[name]
 
 
-# Loop principal
+# loop principal
 game = Game()
 running = True
 
